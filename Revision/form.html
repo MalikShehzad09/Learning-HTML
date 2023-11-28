@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Designing a form
+	</title>
+</head>
+<body>
+<form >
+	<fieldset>
+		<legend>Enter your personal details</legend>
+	<label>Name<input type="text" value="Enter Name"> <br><br> <!-- value attribute enter value and u have to dlt first but placeholder is used to indicate value So in name element value is used and in password field placeholder is used You can see the difference clearly in browser -->
+
+		<label>Password</label><input type="password" name="" placeholder="password"> <br><br>
+
+		<label>Gender</label><input type="radio" name="gender" id="male"><label for="male">Male</label><input type="radio" name="gender"  id="female"><label for="female">Female</label> <br><br>
+
+		<label>Hobbies</label> <input type="checkbox" name="hobby" id="music"> <label for="music">Music</label>     <input type="checkbox" name="hobby" id="cricket">  <label for="cricket">Cricket</label>    <input type="checkbox" name="hobby" id="dancing">   <label for="dancing">Dancing</label>   <input type="checkbox" name="hobby" id="reading">   <label for="reading">Reading</label> <br><br>
+		<label>Message</label> <textarea rows="5" cols="10">Leave a message</textarea> <br><br>
+		<label>country</label> <select>
+	                  <option>Pakistan</option>	
+	                  <option>India</option>		
+	                  <option>Nepal</option>	
+	                  <option>China</option>	
+	           </select>
+		       
+		       <br><br>
+
+		<label>Cars</label><select>
+
+		<optgroup label="Toyota">
+			<option>Crolla</option>
+			<option>Fortuner</option>
+			<option>ZX</option>
+		</optgroup>  
+
+		  <optgroup label="Honda">
+			<option>Civic</option>
+			<option>BRV</option>
+			<option>Accord</option>
+		</optgroup>
+
+	</select>
+	<br><br>
+
+<label>Cars</label>
+<input list="cars">
+<datalist id="cars">
+           <option value="BRV">
+           <option value="Civic">
+           <option value="Accord">
+           <option value="Fortuner">
+           <option value="ZX">
+</datalist>
+<br><br>
+<label>Upload File</label> <input type="file" accept="image/*" name=""> <!-- star mean all typye of image formats like png jpeg etc -->
+<!-- Same goes for audio star or if want a specific type then replace the star with it like mp3 etc -->
+<br><br>
+<input type="submit" >
+<input type="reset" >
+</fieldset>
+</form>
+
+</body>
+</html>
